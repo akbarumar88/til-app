@@ -32,6 +32,8 @@ export default function Home() {
 
   return (
     <Fragment>
+      <p className="text-lg">Today I Learned</p>
+
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg mb-5">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -63,7 +65,7 @@ export default function Home() {
                   >
                     {kata}
                   </th>
-                  <td className="px-6 py-4">{arti}</td>
+                  <th className="px-6 py-4">{arti}</th>
                   <td className="px-6 py-4">
                     {moment(tgl).format("DD MMM YYYY")}
                   </td>
